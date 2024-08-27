@@ -1,0 +1,122 @@
+@font-face {
+    font-family: "Lucida Console";
+    src: url("../fonts/LUCON.TTF");
+}
+
+/* Estilo para el encabezado */
+header h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 20px;
+    color: #333;
+    font-family: "Lucida Console", monospace;
+}
+
+/* Estilo para el contenedor principal */
+.encryptador {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #e6f2ff;
+    border-radius: 10px;
+    font-family: "Lucida Console", monospace;
+}
+
+/* Estilo para las áreas de texto */
+.cajas__texto textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 1em;
+    border: 2px solid #208cff;
+    border-radius: 5px;
+    resize: none;
+    font-family: "Lucida Console", monospace;
+}
+
+/* Estilo para los botones */
+.botones {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Espaciado entre botones */
+}
+
+.button {
+    padding: 15px 20px;
+    font-size: 1em;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #208cff;
+    color: white;
+    transition: background-color 0.3s ease;
+    font-family: "Lucida Console", monospace;
+}
+
+.button:hover {
+    background-color: #fbff00;
+}
+
+/* Estilo para el texto informativo */
+.encryptador p {
+    font-size: 0.9em;
+    color: #666;
+    text-align: center;
+    font-family: "Lucida Console", monospace;
+}
+
+/* Estilo para el pie de página */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #208cff;
+    color: white;
+    font-family: "Lucida Console", monospace;
+    border-radius: 0 0 10px 10px;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 1em;
+}
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5em; /* Reduce el tamaño del encabezado en pantallas más pequeñas */
+    }
+
+    .cajas__texto textarea {
+        height: 80px; /* Ajusta la altura del área de texto */
+    }
+
+    .button {
+        padding: 12px 16px; /* Ajusta el tamaño de los botones */
+        font-size: 0.9em;
+    }
+
+    .footer {
+        padding: 15px;
+    }
+}
+
+/* Media Queries para tabletas */
+@media (max-width: 1024px) and (min-width: 769px) {
+    header h1 {
+        font-size: 1.8em; /* Ajusta el tamaño del encabezado para tabletas */
+    }
+
+    .cajas__texto textarea {
+        height: 90px; /* Ajusta la altura del área de texto para tabletas */
+    }
+
+    .button {
+        padding: 15px 20px; /* Ajusta el tamaño de los botones para tabletas */
+        font-size: 1em;
+    }
+
+    .footer {
+        padding: 18px;
+    }
+}
